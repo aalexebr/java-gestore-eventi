@@ -136,11 +136,11 @@ public class Event {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "EVENT \n"+
-				"name: "+getTitle()+ "\n"+
-				"date: "+ getDate()+ "\n"+
+				"name: "+ getTitle() + "\n"+
+				"date: "+ getFormatDate() + "\n"+
 				"tot seats "+getTotSeats()+ "\n"+
-				"reserved: "+getReservedSeats() + "\n"+
-				"format: " +getFormatDate();
+				"reserved: "+getReservedSeats() + "\n";
+				
 		
 	}
 	

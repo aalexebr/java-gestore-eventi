@@ -6,15 +6,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
+import org.java.pojo.abs.Concert;
 import org.java.pojo.abs.Event;
 
 public class Main {
 	public static void main(String[] args) {
-		
-//		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd ");
-//		Date date = new Date();
-//		System.out.println(dateFormat.format(date));
-		
+//		CONCERT MILESTONe3
+		try {
+			Concert x = new Concert("event1", 2023,12,12, 1000,"99.12",12,30);
+			System.out.println(x);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
+//		milestone 1
 //		try {
 //			Event x = new Event("event1", 2023,8,12, 1000);
 //			System.out.println(x);
@@ -120,6 +125,7 @@ public class Main {
 			else {
 				System.out.println("terminated");
 		}
+			System.out.println(event);
 		
 		
 		
