@@ -177,7 +177,7 @@ public class Main {
 		
 		System.out.println(prog.eventsInDate(2023,12,23));
 		
-		prog.deleteAllEvents();
+//		prog.deleteAllEvents();
 		
 		prog.printList();
 		

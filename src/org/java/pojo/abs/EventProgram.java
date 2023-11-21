@@ -60,7 +60,7 @@ public class EventProgram {
 		System.out.println("Program: " +getTitle());
 		for (int i = 0; i < getProgramLength(); i++) {
 			 Event event = getEvents().get(i);
-			 System.out.println(event);
+			 System.out.println(event.getTitle() + " - " + event.getFormatDate());
 	        }
 	}
 	

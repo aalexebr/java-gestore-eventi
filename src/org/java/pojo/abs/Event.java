@@ -116,7 +116,7 @@ public class Event {
 //		System.out.println(dateFormat.format(getDate()));
 //		return dateFormat.format(getDate());
 		
-		String pattern = "dd-MM-yyyy";
+		String pattern = "dd/MM/yyyy";
 
         // Create a DateTimeFormatter with the desired pattern
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
