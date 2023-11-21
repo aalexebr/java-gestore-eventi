@@ -182,18 +182,6 @@ public class Main {
 		prog.printList();
 		
 		
-		try {
-			event1.makeMultipleReservations(10);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		System.out.println(event1);
-		try {
-			event1.cancelMultipleReservations(11);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		System.out.println(event1);
 	}
 
 }

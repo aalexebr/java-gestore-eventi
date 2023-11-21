@@ -2,6 +2,8 @@ package org.java.pojo.abs;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class EventProgram {
@@ -57,11 +59,17 @@ public class EventProgram {
 	}
 	
 	public void printList() {
+		
+		Collections.sort(getEvents(), Comparator.comparing(Event::getDate));
 		System.out.println("Program: " +getTitle());
-		for (int i = 0; i < getProgramLength(); i++) {
-			 Event event = getEvents().get(i);
-			 System.out.println(event.getTitle() + " - " + event.getFormatDate());
-	        }
+		
+		for (Event event : getEvents()) {
+			 System.out.println(event.getFormatDate() + " - " + event.getTitle());
+        }
+//		for (int i = 0; i < getProgramLength(); i++) {
+//			 Event event = getEvents().get(i);
+//			 System.out.println(event.getTitle() + " - " + event.getFormatDate());
+//	        }
 	}
 	
 
